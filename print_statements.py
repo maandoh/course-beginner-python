@@ -1,17 +1,15 @@
 if __name__ == '__main__':
-	print('My name is', 'George', 'and I am', 42)
-	print('hello', 'world', sep='+')
-	print("My name is {} and best place to study programming is {}".format('hello', 'world'))
-	print("My name is {0} and best place to study programming is {1}".format('hello', 'world'))
-	print('{:^20}'.format('journaldev'))
-	print('{:+d}'.format(42))
-	# Dictionary Formatting
-	stark = {'first': 'Ned', 'second': 'Brandon', 'third': 'Rob'}
-	print('{first} {third}'.format(**stark))
-	# Datetime Formatting
-	from datetime import datetime
+	a = 'two'
+	b = 'three'
+	c = 'four'
 
-	print('{:%Y-%m-%d %H:%M}'.format(datetime(2017, 12, 7, 13, 22)))
-	# Decimal formatting
-	value = '{:{width}.{prec}f}'.format(3.1428, width=5, prec=2)
-	print(value)
+	print('one %s three' % a)  # one two three
+	print('one %s %s' % (a, b))
+	print('one', a, b)
+	print('one', a, b, sep='+')
+	print('one {} three {} five'.format(a, c))
+	print('one {1} three {0} five'.format(c, a))
+	print('+{:^10}+'.format(c))  # Value alignment
+	print('{:+d}'.format(43))  # Signed numbers
+	print('{a} {b}'.format(**{'a': a, 'b': b}))
+	print('{:{width}.{prec}f}'.format(3.1428, width=5, prec=2))
