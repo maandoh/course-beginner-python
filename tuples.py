@@ -1,4 +1,13 @@
 """
+A tuple consists of a number of values separated by commas.
+Parentheses are necessary if the tuple is part of a larger expression.
+
+Though tuples may seem similar to lists, they are often used in different situations and for different purposes.
+Tuples are immutable, and usually contain a heterogeneous sequence of elements that are accessed via unpacking,
+or indexing.
+
+Lists are mutable, and their elements are usually homogeneous and are accessed by iterating over the list.
+
 Refererence:
 https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences
 """
