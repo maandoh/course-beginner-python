@@ -30,10 +30,10 @@ print('jack' not in tel)  # False
 tel = dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])
 print(tel)  # {'sape': 4139, 'guido': 4127, 'jack': 4098}
 
-# Dict comprehensions can be used to create dictionaries from arbitrary key and value expressions:
-squares = {x: x ** 2 for x in (2, 4, 6)}
-print(squares)  # {2: 4, 4: 16, 6: 36}
-
 # When the keys are simple strings, it is sometimes easier to specify pairs using keyword arguments:
 tel = dict(sape=4139, guido=4127, jack=4098)
 print(tel)  # {'sape': 4139, 'guido': 4127, 'jack': 4098}
+
+# Dict comprehensions can be used to create dictionaries from arbitrary key and value expressions:
+squares = {x: x ** 2 for x in (2, 4, 6)}
+print(squares)  # {2: 4, 4: 16, 6: 36}

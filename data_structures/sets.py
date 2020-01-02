@@ -10,6 +10,7 @@ https://docs.python.org/3/tutorial/datastructures.html#sets
 # Note: to create an empty set you have to use set(), not {}; the latter creates an empty dictionary,
 
 basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+
 print(basket)  # {'apple', 'pear', 'banana', 'orange'} - duplicated removed
 
 print('orange' in basket)  # True
