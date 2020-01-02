@@ -12,11 +12,3 @@ while True:
 	except ValueError:
 		print('Oops!  That was no valid number. Try again...')
 
-"""
-A try statement may have more than one except clause.
-"""
-try:
-	# Do something here...
-	pass
-except (RuntimeError, TypeError, NameError):
-	pass

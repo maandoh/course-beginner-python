@@ -3,7 +3,7 @@ The else clause executes when the try block executes without any errors.
 
 The finally block will execute regardless of an exception or not.
 Even when a return statement is found elsewhere, this finally block will still be executed.
-This is especially for defining clean-p actions.
+This is especially useful for clean-up actions.
 """
 for i in range(3):
 	try:

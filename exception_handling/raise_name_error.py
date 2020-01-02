@@ -6,5 +6,3 @@ https://docs.python.org/3/tutorial/errors.html#handling-exceptions
 """
 
 raise NameError('HiThere')
-
-raise ValueError  # shorthand for 'raise ValueError()'
